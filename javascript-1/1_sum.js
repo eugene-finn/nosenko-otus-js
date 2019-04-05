@@ -12,6 +12,16 @@ function sum(x) {
   return summa(x)
 }
 
+// замыкания 
+
+var counter = (function () {
+  var count = 0;
+  return function () {
+    return count++;
+  }
+
+}());
+
 
 // function sum() {
 //   var result = 0;
